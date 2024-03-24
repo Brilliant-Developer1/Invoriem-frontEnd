@@ -9,10 +9,10 @@ module.exports = {
   presets: [require('keep-react/preset')],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'darkg': 'rgb(31, 31, 31)',
+        'teal': 'rgb(17, 68, 85)',
+        'white': 'rgb(255, 255, 255)',
       },
     },
   },

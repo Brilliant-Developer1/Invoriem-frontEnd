@@ -13,7 +13,12 @@ export const NavBar = () => {
           </li>
           <li className="px-16 ">
             <Link href="/contactus">
-              <PrimaryButton />
+              <PrimaryButton text="teal" background="white" hover="teal" />
+            </Link>
+          </li>
+          <li className="px-16 ">
+            <Link href="/contactus">
+              <PrimaryButton text="white" background="teal" hover="white" />
             </Link>
           </li>
         </ul>
