@@ -13,14 +13,14 @@ export const NavBar = () => {
           </li>
           <li className="px-16 ">
             <Link href="/contactus">
-              <PrimaryButton text="teal" background="white" hover="teal" />
+            <PrimaryButton text="Let&lsquo;s Talk" background="white" hover="teal" />
             </Link>
           </li>
-          <li className="px-16 ">
+          {/* <li className="px-16 ">
             <Link href="/contactus">
-              <PrimaryButton text="white" background="teal" hover="white" />
+            <PrimaryButton text="Click me" background="teal" hover="white" />
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
