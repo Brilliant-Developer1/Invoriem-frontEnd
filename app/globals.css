@@ -18,7 +18,7 @@
 
 body {
   color: var(--teal);
-  padding: 30px;
+  padding: 10px;
 }
 
 @layer utilities {
