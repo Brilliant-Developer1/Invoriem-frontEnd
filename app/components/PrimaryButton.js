@@ -20,7 +20,7 @@ export const PrimaryButton = ({ text, background, hover }) => {
     {
       'bg-white text-teal border border-teal': isWhiteBackground,
       'hover:bg-teal hover:text-white hover:border-white': isWhiteBackground,
-      'bg-teal text-white border border-white': isTealBackground,
+      'bg-teal text-white ': isTealBackground,
       'hover:bg-white hover:text-teal hover:border-teal': isTealBackground,
     }
   );

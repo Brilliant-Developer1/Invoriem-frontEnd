@@ -1,7 +1,11 @@
+import Hero from "./components/Hero/Hero";
+
 export default function Home() {
-  return <main  >Home Page
+  return (
+    <main>
+      <Hero></Hero>
 
-
-  </main>;
+    </main>
+  );
 }
 // style={{ marginTop: '64px' }}

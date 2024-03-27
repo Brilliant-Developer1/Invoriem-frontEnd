@@ -9,9 +9,9 @@ import Image from 'next/image';
 export const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div style={{ marginBottom: '62px' }}>
+    <div style={{ marginBottom: '78px' }}>
       <nav className="w-full fixed top-0 left-0 right-0 z-10">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
@@ -36,12 +36,12 @@ export const NavBar = () => {
           <div>
             <div
               className={`flex-1 justify-self-center pb-3 rounded-lg md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block bg-slate-50' : 'hidden'
+                navbar ? 'p-12 md:p-0 block bg-slate-50 md:bg-white' : 'hidden'
               }`}
             >
               <div className="h-screen md:h-auto items-center justify-center md:flex ">
-              <ul className='flex flex-col md:flex-row items-center'>
-              <li className="  pb-3 text-xl font-semibold text-teal py-2 md:px-6 text-center border-b-2 md:border-b-0 border-teal md:hover:text-purple-600 md:hover:bg-transparent">
+              <ul className='flex flex-col md:flex-row items-center '>
+              <li className=" transition-all duration-500 ease-in-out  pb-3 text-xl font-semibold text-teal py-2 md:px-6 text-center border-b-2 md:border-b-0 border-teal md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link href="/aboutus" onClick={() => setNavbar(!navbar)}>
                     About
                   </Link>
@@ -51,8 +51,6 @@ export const NavBar = () => {
             <PrimaryButton text="Let&lsquo;s Talk" background="white" hover="teal" />
             </Link>
                 </li>
-                
-                
               </ul>
               </div>
             </div>
@@ -79,7 +77,7 @@ export const NavBar = () => {
           </li>
           <li className="px-16 ">
             <Link href="/contactus">
-            <PrimaryButton text="Click me" background="teal" hover="white" />
+            <PrimaryButton text="Let&lsquo;s Talk" background="teal" hover="white" />
             </Link>
           </li> 
           </ul>
