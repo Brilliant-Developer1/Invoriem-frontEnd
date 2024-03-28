@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 export const PrimaryButton = ({ text, background, hover }) => {
   const isWhiteBackground = background === 'white';
   const isTealBackground = background === 'teal';
+  const isEmptyBackground = background === '';
   const [isHovered, setIsHovered] = useState(false);
 
   const buttonClasses = classNames(
@@ -18,15 +19,16 @@ export const PrimaryButton = ({ text, background, hover }) => {
     'text-lg',
     'font-semibold',
     {
-      'bg-white text-teal border border-teal': isWhiteBackground,
-      'hover:bg-teal hover:text-white hover:border-white': isWhiteBackground,
+      'border border-teal': isWhiteBackground || isEmptyBackground,
+      'bg-white text-teal': isWhiteBackground,
+      'hover:bg-teal hover:text-white hover:border-white': isWhiteBackground || isEmptyBackground,
       'bg-teal text-white ': isTealBackground,
       'hover:bg-white hover:text-teal hover:border-teal': isTealBackground,
     }
   );
 
-  const svgFillColor = isWhiteBackground ? '#114455' : '#fff';
-  const svgHoverColor = isWhiteBackground ? '#fff' : '#114455';
+  const svgFillColor = isWhiteBackground || isEmptyBackground ? '#114455' : '#fff';
+  const svgHoverColor = isWhiteBackground || isEmptyBackground ? '#fff' : '#114455';
 
   const handleHover = () => {
     setIsHovered(!isHovered);
