@@ -19,6 +19,9 @@ module.exports = {
         'white': 'rgb(255, 255, 255)',
       },
     },
+    container: {
+      center: true,
+    },
   },
   
 };

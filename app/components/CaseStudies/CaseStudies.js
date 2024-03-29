@@ -1,16 +1,22 @@
-import getAllCases from "@/lib/getAllCases";
 
-export default async function CaseStudies(){
-    const cases = await getAllCases();
-    
+import getAllCases from '@/lib/getAllCases';
+import Image from 'next/image';
+import { Slide } from './Slide';
+
+
+
+export default async function CaseStudies() {
+  const cases = await getAllCases();
+
+  
+
   return (
-    <div>
-      <h1>CaseStudies</h1>
-      <ul>
-        {cases.map(caseItem => (
-          <li key={caseItem.id}>{caseItem.name}</li>
-        ))}
-      </ul>
+    <div className="container mt-20">
+      <h2 className="text-teal text-4xl font-semibold ">Case Studies</h2>
+      <div className="mt-14 ">
+      <Slide cases={cases}></Slide>
+        
+      </div>
     </div>
   );
-};
+}

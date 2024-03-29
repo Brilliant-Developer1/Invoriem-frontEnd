@@ -17,16 +17,7 @@
 
 body {
   color: var(--teal);
-  /* padding: 10px; */
 }
-
-/* .hero {
-  min-height: 100vh;
-  background-image: url('/public/images/heroimage.jpg'); 
-  background-size: cover;
-  background-position: center;
-  position: relative;
-} */
 
 @layer utilities {
   .text-balance {

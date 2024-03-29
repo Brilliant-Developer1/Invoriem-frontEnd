@@ -1,8 +1,13 @@
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import './globals.css';
 import { NavBar } from './components/NavBar/NavBar';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({ 
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  style: ['normal', 'normal', 'normal'],
+  display: 'swap', 
+});
 
 export const metadata = {
   title: 'Invoriem',
@@ -13,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <NavBar></NavBar>
         {children}
       </body>
