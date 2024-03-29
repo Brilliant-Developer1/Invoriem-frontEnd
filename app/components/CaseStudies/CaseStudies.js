@@ -1,8 +1,16 @@
-export const CaseStudies = () => {
+import getAllCases from "@/lib/getAllCases";
+
+export default async function CaseStudies(){
+    const cases = await getAllCases();
+    
   return (
     <div>
       <h1>CaseStudies</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus in praesentium, dolore cupiditate soluta tempora distinctio! Saepe fuga eligendi iure esse aut possimus nesciunt porro aliquam aperiam quo? Recusandae accusantium, est totam esse earum omnis numquam amet repellat dolor sint debitis ea ipsam incidunt explicabo ut, commodi quidem id!</p>
+      <ul>
+        {cases.map(caseItem => (
+          <li key={caseItem.id}>{caseItem.name}</li>
+        ))}
+      </ul>
     </div>
   );
 };

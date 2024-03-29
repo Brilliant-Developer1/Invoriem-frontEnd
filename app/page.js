@@ -1,4 +1,5 @@
-import { CaseStudies } from "./components/CaseStudies/CaseStudies";
+
+import CaseStudies from "./components/CaseStudies/CaseStudies";
 import Hero from "./components/Hero/Hero";
 
 export default function Home() {
