@@ -13,7 +13,7 @@ export default async function CaseStudies() {
   return (
     <div className="container mt-20">
       <h2 className="text-teal text-4xl font-semibold ">Case Studies</h2>
-      <div className="mt-14 ">
+      <div className="mt-20 ">
       <Slide cases={cases}></Slide>
         
       </div>
