@@ -8,14 +8,6 @@ import './Slide.css'
 
 
 export const Slide = ({ cases }) => {
-  const fakeThumb = [
-    'https://images.unsplash.com/photo-1534237710431-e2fc698436d0?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1470075801209-17f9ec0cada6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1428366890462-dd4baecf492b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1486175060817-5663aacc6655?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1576731753569-3e93a228048c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  ];
   let settings = {
     dots: true,
     infinite: true,
@@ -53,15 +45,15 @@ export const Slide = ({ cases }) => {
   return (
     <div>
       <Slider {...settings}>
-        {fakeThumb.map((src, index) => (
-          <div className='' key={index}>
+        {cases.map((singleCase) => (
+          <div className='' key={singleCase.id}>
           <Image
               width="0"
               height="0"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{ width: '100%', height: 'auto' }}
-              src={src}
-              alt={`Thumbnail ${index}`}
+              src={singleCase.thumb}
+              alt={`Thumbnail ${singleCase.id}`}
           />
       </div>
         ))}
