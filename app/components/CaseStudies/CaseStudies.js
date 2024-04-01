@@ -1,5 +1,4 @@
 import getAllCases from '@/lib/getAllCases';
-import Image from 'next/image';
 import { Slide } from './Slide';
 
 
