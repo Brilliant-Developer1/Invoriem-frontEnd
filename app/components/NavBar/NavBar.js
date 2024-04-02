@@ -1,16 +1,40 @@
 "use client";
 import { PrimaryButton } from '@/app/components/PrimaryButton.js';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from "@/public/images/logo.png";
 import Image from 'next/image';
 
 
 export const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Determine the scroll position
+      const scrollPosition = window.scrollY;
+
+      // Apply white background to the navbar when scrolled past the scroll position (180)
+      if (scrollPosition >= 180) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove the scroll event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <div style={{ marginBottom: '78px' }}>
-      <nav className="w-full fixed top-0 left-0 right-0 z-10">
+    <div style={{  }}>
+      <nav className={`w-full fixed top-0 left-0 right-0 z-10 ${isScrolled ? 'bg-white' : ''}`}>
         <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -60,33 +84,3 @@ export const NavBar = () => {
     </div>
   );
 };
-
-/*
-<div>
-        <Image width={250} src={logo} alt='logo'/>
-      </div>
-      <div>
-        <ul className="flex gap-8 items-center">
-          <li>
-            <Link href="/aboutus">About us</Link>
-          </li>
-          <li className="px-16 ">
-            <Link href="/contactus">
-            <PrimaryButton text="Let&lsquo;s Talk" background="white" hover="teal" />
-            </Link>
-          </li>
-          <li className="px-16 ">
-            <Link href="/contactus">
-            <PrimaryButton text="Let&lsquo;s Talk" background="teal" hover="white" />
-            </Link>
-          </li> 
-          </ul>
-          </div>
-
-
-          <li className="text-xl text-teal font-semibold">
-                  <Link href="/aboutus" onClick={() => setNavbar(!navbar)}>
-                    About
-                  </Link>
-                </li>
-*/

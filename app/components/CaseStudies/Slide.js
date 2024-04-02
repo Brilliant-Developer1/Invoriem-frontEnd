@@ -9,7 +9,7 @@ export const Slide = ({ cases }) => {
   let settings = {
     dots: true,
     infinite: true,
-    // autoplay: true,
+    autoplay: true,
     speed: 1500,
     autoplaySpeed: 3000,
     pauseOnHover: true,
