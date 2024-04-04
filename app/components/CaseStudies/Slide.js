@@ -9,6 +9,7 @@ export const Slide = ({ cases }) => {
   let settings = {
     dots: true,
     infinite: true,
+    arrows: true,
     autoplay: true,
     speed: 1500,
     autoplaySpeed: 3000,
@@ -27,6 +28,7 @@ export const Slide = ({ cases }) => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          arrows: false,
         },
       },
       {
@@ -35,6 +37,7 @@ export const Slide = ({ cases }) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
+          arrows: false,
         },
       },
     ],

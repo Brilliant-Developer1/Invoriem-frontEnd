@@ -1,4 +1,5 @@
 
+import { Brands } from "./components/Brands/Brands";
 import CaseStudies from "./components/CaseStudies/CaseStudies";
 import Hero from "./components/Hero/Hero";
 import { WeAreInvoriem } from "./components/WeAreInvoriem/WeAreInvoriem";
@@ -9,8 +10,8 @@ export default function Home() {
       <Hero></Hero>
       <CaseStudies></CaseStudies>
       <WeAreInvoriem></WeAreInvoriem>
+      <Brands></Brands>
 
     </main>
   );
 }
-// style={{ marginTop: '64px' }}
