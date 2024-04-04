@@ -6,7 +6,7 @@ import logo3 from '@/public/images/p_logo_03.webp'
 import logo4 from '@/public/images/p_logo_04.webp'
 import logo5 from '@/public/images/p_logo_05.webp'
 import logo6 from '@/public/images/p_logo_06.webp'
-import './Brands.css'
+
 
 import Image from 'next/image';
 import Slider from 'react-slick'
