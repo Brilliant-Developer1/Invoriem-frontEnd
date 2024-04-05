@@ -1,5 +1,5 @@
 import getAllCases from '@/lib/getAllCases';
-import { Slide } from './Slide';
+import { Slides } from './Slides';
 
 
 
@@ -15,7 +15,7 @@ export default async function CaseStudies() {
       <p className="mb-5 text-gray-600">We deliver a unique and truly bespoke approach to delivering international developments to market, with over 10 years success around the world.</p>
       </div>
       <div className="mt-0 sm:mt-20 ">
-      <Slide cases={cases}></Slide>
+      <Slides cases={cases}></Slides>
         
       </div>
     </div>

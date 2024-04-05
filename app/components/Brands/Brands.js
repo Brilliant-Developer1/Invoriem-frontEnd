@@ -1,38 +1,27 @@
 "use client"
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
+import Slider from 'react-slick'
 import logo1 from '@/public/images/p_logo_01.webp'
 import logo2 from '@/public/images/p_logo_02.webp'
 import logo3 from '@/public/images/p_logo_03.webp'
 import logo4 from '@/public/images/p_logo_04.webp'
 import logo5 from '@/public/images/p_logo_05.webp'
 import logo6 from '@/public/images/p_logo_06.webp'
+import Image from 'next/image'
 
-
-import Image from 'next/image';
-import Slider from 'react-slick'
-
+const Slide = ({ src }) => {
+  return (
+    <div className="w-full h-32  flex items-center justify-center ">
+      <div className='flex justify-center items-center w-full h-full'>
+      <Image src={src} alt='logo'/>
+      </div>
+    </div>
+  );
+};
 
 export const Brands = () => {
-    const sliderRef = useRef(null);
-
-    useEffect(() => {
-        // const slickArrowElements = sliderRef.current?.innerSlider?.list.querySelectorAll('.slick-arrow');
-        const slickTrackElements = sliderRef.current?.innerSlider?.list.querySelectorAll('.slick-track');
-        const slickSlideElements = sliderRef.current?.innerSlider?.list.querySelectorAll('.slick-slide');
-
-        // slickArrowElements.forEach((arrow) => {
-        //     arrow.style.display = 'none !important';
-        // });
-        slickSlideElements.forEach((slide) => {
-            slide.style.cssText += 'display: flex; justify-content: center;';
-        });
-        slickTrackElements.forEach((slide) => {
-            slide.style.cssText += 'align-items: center;';
-        });
-        
-    }, []);
-    let settings = {
-        infinite: true,
+  const slickSettings = {
+    infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
@@ -68,57 +57,19 @@ export const Brands = () => {
           }
           
         ],
-        onInit: () => {
-            // Code to execute after slider initialization
-            // This event handler is triggered after the slider has been initialized
-          },
-      };
+  };
   return (
-    <div className='bg-teal'>
-        <div className='container mt-40 slider-container'>
-        <Slider ref={sliderRef} className='' {...settings}>
-        <div className='p-8'>
-        <Image  src={logo1} alt='logo'/>
+    <div className="mt-20 bg-teal">
+        <div className="container">
+          <Slider {...slickSettings}>
+            <Slide src={logo1} />
+            <Slide src={logo2} />
+            <Slide src={logo3} />
+            <Slide src={logo4} />
+            <Slide src={logo5} />
+            <Slide src={logo6} />
+          </Slider>
         </div>
-        <div className='p-8'>
-        <Image  src={logo2} alt='logo'/>
-        </div>
-        <div className='p-8'>
-        <Image  src={logo3} alt='logo'/>
-        </div>
-        <div className='p-8'>
-        <Image  src={logo4} alt='logo'/>
-        </div>
-        <div className='p-8'>
-        <Image  src={logo5} alt='logo'/>
-        </div>
-        <div className='p-8'>
-        <Image  src={logo6} alt='logo'/>
-        </div>
-      </Slider>
-        </div>
-    </div>
+      </div>
   )
 }
-/*
-<Slider ref={sliderRef} className='' {...settings}>
-        <div className='p-8'>
-        <Image  src={logo1} alt='logo'/>
-        </div>
-        <div className='p-8'>
-        <Image  src={logo2} alt='logo'/>
-        </div>
-        <div className='p-8'>
-        <Image  src={logo3} alt='logo'/>
-        </div>
-        <div className='p-8'>
-        <Image  src={logo4} alt='logo'/>
-        </div>
-        <div className='p-8'>
-        <Image  src={logo5} alt='logo'/>
-        </div>
-        <div className='p-8'>
-        <Image  src={logo6} alt='logo'/>
-        </div>
-      </Slider>
-*/
