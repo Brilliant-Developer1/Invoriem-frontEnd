@@ -53,7 +53,6 @@ export const Slides = ({ cases }) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
           dots: true,
           arrows: false,
         },
