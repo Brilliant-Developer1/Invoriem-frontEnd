@@ -6,7 +6,7 @@ import './Slide.css';
 
 const Slide = ({ singleCase }) => {
   return (
-    <div className='px-[40px]'>
+    <div className=' pr-0 sm:pr-10 pl-10 '>
             <div className="w-full h-[550px] relative ">
               <div
                 className="w-full h-[550px] z-10 absolute overflow-hidden"
@@ -17,13 +17,13 @@ const Slide = ({ singleCase }) => {
                 }}
               >
                 <div className="absolute top-3/4 -left-9">
-                  <p className="text-5xl md:text-7xl font-extrabold">
+                  <p className="text-6xl  md:text-7xl font-extrabold">
                     <span className="text-white">{singleCase.name}</span>
                   </p>
                 </div>
               </div>
               <div className="absolute top-3/4 -left-9">
-                  <p className="text-5xl md:text-7xl font-extrabold">
+                  <p className="text-6xl  md:text-7xl font-extrabold">
                     <span className="text-teal">{singleCase.name}</span>
                   </p>
                 </div>
@@ -49,7 +49,7 @@ export const Slides = ({ cases }) => {
 
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
