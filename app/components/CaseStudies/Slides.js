@@ -32,6 +32,41 @@ const Slide = ({ singleCase }) => {
   );
 };
 
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} `}
+      style={{ ...style, top: "-10%", left: "89%", }}
+      onClick={onClick}
+    ><style jsx>{`
+    .slick-prev:before {
+      content: "←";
+      color: var(--teal);
+      font-size: 50px;
+    }
+    `}</style>
+    </div>
+  );
+}
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className}`}
+      style={{ ...style,  right: "5%", top: "-10%",}}
+      onClick={onClick}
+    ><style jsx>{`
+    .slick-next:before {
+      content: "→";
+      color: var(--teal);
+      font-size: 50px;
+    }
+    `}</style>
+    </div>  
+  );
+}
 export const Slides = ({ cases }) => {
   let settings = {
     dots: true,
@@ -45,7 +80,9 @@ export const Slides = ({ cases }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    lazyLoad: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    
 
     responsive: [
       {
@@ -72,9 +109,11 @@ export const Slides = ({ cases }) => {
   return (
     <div>
       <Slider {...settings}>
+      
         {cases.map(singleCase => (
           <Slide key={singleCase.id} singleCase={singleCase} />
         ))}
+        
       </Slider>
     </div>
   );
