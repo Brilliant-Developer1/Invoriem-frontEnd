@@ -1,3 +1,9 @@
-export default function Home() {
-  return <main>Contact Us Page</main>;
+import { Contactus } from "./Contactus";
+
+export default function Page() {
+  return (
+    <main>
+      <Contactus/>
+    </main>
+  );
 }
