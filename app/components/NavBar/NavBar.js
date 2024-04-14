@@ -70,6 +70,11 @@ export const NavBar = () => {
                     About
                   </Link>
                 </li>
+              <li className=" transition-all duration-500 ease-in-out  pb-3 text-xl font-semibold text-teal py-2 md:px-6 text-center border-b-2 md:border-b-0 border-teal md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link href="/gallery" onClick={() => setNavbar(!navbar)}>
+                  Gallery
+                  </Link>
+                </li>
               <li className=" mt-6 md:mt-0 text-xl font-semibold text-teal py-2 md:px-6    hover:bg-purple-900  border-teal md:hover:text-purple-600 md:hover:bg-transparent">
               <Link href="/contactus" onClick={() => setNavbar(!navbar)}>
             <PrimaryButton text="Let&lsquo;s Talk" background="" hover="teal" />
