@@ -11,30 +11,9 @@ export const NavBar = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Determine the scroll position
-      const scrollPosition = window.scrollY;
-
-      // Apply white background to the navbar when scrolled past the scroll position (180)
-      if (scrollPosition >= 180) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    // scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Remove the scroll event listener when component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  
   return (
-    <div style={{  }}>
-      <nav className={`w-full fixed top-0 left-0 right-0 z-10 ${isScrolled ? 'bg-white' : ''}`}>
+    <nav className={`w-full sticky top-0 bg-white z-10`}>
         <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -86,6 +65,5 @@ export const NavBar = () => {
           </div>
         </div>
       </nav>
-    </div>
   );
 };

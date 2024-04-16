@@ -2,6 +2,8 @@ export const images = [
     
     
     { url: 'https://images.unsplash.com/photo-1550136513-548af4445338?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Building 2', type: 'buildings' },
+
+    { url: 'https://images.unsplash.com/photo-1588253198250-d4c5be49f387?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Building 11', type: 'buildings' },
     { url: 'https://images.unsplash.com/photo-1614713223639-819abc4a7645?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Villa 11', type: 'villa' },
     { url: 'https://images.unsplash.com/photo-1470723710355-95304d8aece4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Building 1', type: 'buildings' },
     { url: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Villa 1', type: 'villa' },
@@ -12,6 +14,7 @@ export const images = [
     { url: 'https://images.unsplash.com/photo-1575517111478-7f6afd0973db?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Villa 4', type: 'villa' },
     { url: 'https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Building 5', type: 'buildings' },
     { url: 'https://images.unsplash.com/photo-1568605115459-4b731184f961?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Villa 5', type: 'villa' },
+    { url: 'https://images.unsplash.com/photo-1465804575741-338df8554e02?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Building 13', type: 'buildings' },
     { url: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Building 6', type: 'buildings' },
     { url: 'https://images.unsplash.com/photo-1600047509358-9dc75507daeb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Villa 6', type: 'villa' },
     { url: 'https://images.unsplash.com/photo-1486174975375-bd1c9e108596?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Building 7', type: 'buildings' },
@@ -23,6 +26,10 @@ export const images = [
     { url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Villa 12', type: 'villa' },
     { url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Villa 9', type: 'villa' },
     { url: 'https://images.unsplash.com/photo-1451153378752-16ef2b36ad05?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Building 10', type: 'buildings' },
-    { url: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Villa 13', type: 'villa' },
+    { url: 'https://images.unsplash.com/photo-1556998641-f9523143131c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Villa 13', type: 'villa' },
+    
+    { url: 'https://images.unsplash.com/photo-1519480424400-ee051f46d6d9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Building 12', type: 'buildings' },
+    
+    
     
   ];
