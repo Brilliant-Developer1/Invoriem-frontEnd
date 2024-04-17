@@ -56,7 +56,7 @@ export const NavBar = () => {
                 </li>
               <li className=" mt-6 md:mt-0 text-xl font-semibold text-teal py-2 md:px-6    hover:bg-purple-900  border-teal md:hover:text-purple-600 md:hover:bg-transparent">
               <Link href="/contactus" onClick={() => setNavbar(!navbar)}>
-            <PrimaryButton text="Let&lsquo;s Talk" background="" hover="teal" />
+            <PrimaryButton text="Let&lsquo;s Talk" background="white" />
             </Link>
                 </li>
               </ul>

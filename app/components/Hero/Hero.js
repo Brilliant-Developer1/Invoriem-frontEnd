@@ -12,7 +12,7 @@ export default function Hero() {
       <h1 className="mb-5 text-5xl font-bold">We build dreams, not just walls</h1>
       <p className="mb-5 text-gray-600">Fulfill your international property developments with us</p>
       <Link href="/contactus">
-            <PrimaryButton text="Let&lsquo;s Talk" background="teal" hover="white" />
+            <PrimaryButton text="Let&lsquo;s Talk" background="teal" />
             </Link>
       </div>
     </div>

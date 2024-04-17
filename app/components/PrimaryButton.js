@@ -1,7 +1,7 @@
 "use client";
 import classNames from 'classnames';
 import React, { useState } from 'react';
-export const PrimaryButton = ({ text, background, hover }) => {
+export const PrimaryButton = ({ text, background }) => {
   const isWhiteBackground = background === 'white';
   const isTealBackground = background === 'teal';
   const isEmptyBackground = background === '';
@@ -9,7 +9,8 @@ export const PrimaryButton = ({ text, background, hover }) => {
 
   const buttonClasses = classNames(
     'py-2',
-    'px-4',
+    'pr-4',
+    'pl-8',
     'flex',
     'items-center',
     'rounded-none',
@@ -22,8 +23,8 @@ export const PrimaryButton = ({ text, background, hover }) => {
       'border border-teal': isWhiteBackground || isEmptyBackground,
       'bg-white text-teal': isWhiteBackground,
       'hover:bg-teal hover:text-white hover:border-white': isWhiteBackground || isEmptyBackground,
-      'bg-teal text-white ': isTealBackground,
-      'hover:bg-white hover:text-teal hover:border-teal': isTealBackground,
+      'bg-teal text-white border border-teal': isTealBackground,
+      'hover:bg-white hover:text-teal hover:border-teal hover:border': isTealBackground,
     }
   );
 

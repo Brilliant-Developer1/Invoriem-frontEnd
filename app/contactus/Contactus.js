@@ -13,8 +13,7 @@ export const Contactus = () => {
         <h1 className='font-bold text-xl mb-8'>Contact us</h1>
         <p>info@example.com</p>
         <p>+971 5113655</p>
-        <p><span className=''>41598 Musaafah 12 St,</span> Abu Dhabi, UAE</p>
-        <p></p>
+        <p>41598 Musaafah 12 St,Abu Dhabi, UAE</p>
       </div>
     </div>
   );

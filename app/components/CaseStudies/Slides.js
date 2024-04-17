@@ -2,7 +2,6 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Slide.css';
 
 const Slide = ({ singleCase }) => {
   return (
@@ -79,7 +78,7 @@ export const Slides = ({ cases }) => {
     cssEase: 'linear',
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 0,
+    // initialSlide: 0,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     

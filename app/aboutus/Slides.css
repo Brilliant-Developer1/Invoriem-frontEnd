@@ -1,0 +1,9 @@
+.team_contaoner {
+}
+
+@media screen and (max-width: 340px) {
+  .team_container {
+    align-items: center;
+    text-align: center;
+  }
+}
