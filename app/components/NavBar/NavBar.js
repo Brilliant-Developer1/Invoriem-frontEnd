@@ -1,25 +1,23 @@
 "use client";
 import { PrimaryButton } from '@/app/components/PrimaryButton.js';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import  { useState } from 'react';
 import logo from "@/public/images/logo.png";
 import Image from 'next/image';
 
 
 export const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
-
-  const [isScrolled, setIsScrolled] = useState(false);
-
   
   return (
-    <nav className={`w-full sticky top-0 bg-white z-10`}>
+    <nav className={`w-full sticky top-0 bg-white z-10 `}>
         <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
-          <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+        <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
               <Link href="/">
-              <Image width={150} src={logo} alt='logo'/>
+              <Image  width={150} src={logo} alt='logo'
+              onClick={() => setNavbar(false)}
+              />
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
@@ -34,28 +32,33 @@ export const NavBar = () => {
                   )}
                 </button>
               </div>
-            </div>
-          </div>
+        </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 rounded-lg md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block bg-slate-50 md:bg-white' : 'hidden'
+              className={`flex-1 justify-self-center md:block  ${
+                navbar ? 'p-12 md:p-0 block bg-slate-50 md:bg-white  ' : 'hidden '
               }`}
             >
-              <div className="h-screen md:h-auto items-center justify-center md:flex ">
+              <div className="h-auto items-center justify-center md:flex ">
               <ul className='flex flex-col md:flex-row items-center '>
-              <li className=" transition-all duration-500 ease-in-out  pb-3 text-xl font-semibold text-teal py-2 md:px-6 text-center border-b-2 md:border-b-0 border-teal md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="/aboutus" onClick={() => setNavbar(!navbar)}>
+              <li className={`
+              text-xl font-semibold text-teal py-2 md:px-6 text-center md:hover:text-purple-600
+              ${navbar ? ' border-b-2 md:border-b-0 border-teal' : ''}
+              `}>
+                  <Link href="/aboutus" onClick={() => setNavbar(false)}>
                     About
                   </Link>
                 </li>
-              <li className=" transition-all duration-500 ease-in-out  pb-3 text-xl font-semibold text-teal py-2 md:px-6 text-center border-b-2 md:border-b-0 border-teal md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="/gallery" onClick={() => setNavbar(!navbar)}>
+              <li className={`
+              text-xl font-semibold text-teal py-2 md:px-6 text-center md:hover:text-purple-600
+              ${navbar ? ' border-b-2 md:border-b-0 border-teal' : ''}
+              `}>
+                  <Link href="/gallery" onClick={() => setNavbar(false)}>
                   Gallery
                   </Link>
                 </li>
-              <li className=" mt-6 md:mt-0 text-xl font-semibold text-teal py-2 md:px-6    hover:bg-purple-900  border-teal md:hover:text-purple-600 md:hover:bg-transparent">
-              <Link href="/contactus" onClick={() => setNavbar(!navbar)}>
+              <li className=" mt-6 md:mt-0 ">
+              <Link href="/contactus" onClick={() => setNavbar(false)}>
             <PrimaryButton text="Let&lsquo;s Talk" background="white" />
             </Link>
                 </li>

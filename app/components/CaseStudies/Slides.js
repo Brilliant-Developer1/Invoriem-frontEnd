@@ -27,7 +27,7 @@ const Slide = ({ singleCase }) => {
                   </p>
                 </div>
             </div>
-            </div>
+    </div>
   );
 };
 
