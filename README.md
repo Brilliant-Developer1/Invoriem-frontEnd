@@ -1,6 +1,6 @@
 # Invoriem
 
-Welcome to Invoriem - a construction building developer frontEnd website built with React, Next.js, and Tailwind CSS.
+Welcome to Invoriem - a building developer consultant frontEnd website built with React, Next.js, and Tailwind CSS.
 
 ## Overview
 
@@ -91,6 +91,10 @@ This will run ESLint with the configured rules on your project.
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Design inspiration
+
+This website design inspired by Rameez Remy's [Figma template](https://dribbble.com/shots/18755891-Property-Developer-Portfolio-Freebie).
 
 ## Contact
 

@@ -5,7 +5,7 @@ export const Aboutus = () => {
   return (
     <section className="mt-8 md:mt-20 flex flex-col md:flex-row  justify-around px-5">
       <h1 className="text-4xl md:text-5xl  lg:text-6xl font-extrabold grow">About us</h1>
-      <details className="max-w-[30rem] lg:max-w-[34rem] mt-4 md:mt-0 text-gray-500 leading-loose">
+      <div className="max-w-[30rem] lg:max-w-[34rem] mt-4 md:mt-0 text-gray-500 leading-loose">
         <p>
           Augue eget nisi, turpis vel nibh urna, ut quam odio libero, aliquam,
           morbi proin feugiat nisl mattis enim venenatis nunc, malesuada urna,
@@ -22,7 +22,7 @@ export const Aboutus = () => {
         <Link href="/contactus" >
             <PrimaryButton text="Let&lsquo;s Talk" background="teal" />
             </Link>
-      </details>
+      </div>
     </section>
   );
 };
