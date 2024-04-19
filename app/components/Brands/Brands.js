@@ -59,7 +59,7 @@ export const Brands = () => {
         ],
   };
   return (
-    <div className="mt-20 bg-teal">
+    <section className="mt-20 bg-teal">
         <div className="container">
           <Slider {...slickSettings}>
             <Slide src={logo1} />
@@ -70,6 +70,6 @@ export const Brands = () => {
             <Slide src={logo6} />
           </Slider>
         </div>
-      </div>
+      </section>
   )
 }

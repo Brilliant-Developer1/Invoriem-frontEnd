@@ -11,7 +11,7 @@ export const ClientsCount = () => {
       onExit={() => setScrollCount(false)}
       className="mt-20 bg-gray-200 text-black"
     >
-      <div className="container py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-start sm:justify-items-center pl-10 sm:pl-0">
+      <section className="container py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-start sm:justify-items-center pl-10 sm:pl-0">
         <div className='min-w-[200px] flex flex-row sm:flex-col items-center sm:items-start sm:justify-center'>
           <div>
             <svg
@@ -111,7 +111,7 @@ export const ClientsCount = () => {
             <p className="text-xl text-gray-600">MACHINERIES</p>
           </div>
         </div>
-      </div>
+      </section>
     </ScrollTrigger>
   );
 };

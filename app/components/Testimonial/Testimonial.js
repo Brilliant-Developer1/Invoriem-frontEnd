@@ -66,7 +66,7 @@ export const Testimonial = () => {
         
       };
   return (
-    <div>
+    <section>
       <div className="container mt-20 ">
       <div className='p-1 sm:p-2'>
       <h2 className="text-teal mb-3 text-3xl sm:text-5xl font-bold ">OUR TESTIMONIALS</h2>
@@ -88,6 +88,6 @@ export const Testimonial = () => {
         
       </div>
       </div>
-    </div>
+    </section>
   )
 }
