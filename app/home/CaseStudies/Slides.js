@@ -2,11 +2,13 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Link from 'next/link';
 
 const Slide = ({ singleCase }) => {
   return (
     <div className=' pr-0 sm:pr-10 pl-10 '>
-            <div className="w-full h-[550px] relative ">
+        <Link href={`singlecase/${singleCase.id}`}>
+        <div className="w-full h-[550px] relative ">
               <div
                 className="w-full h-[550px] z-10 absolute overflow-hidden"
                 style={{
@@ -27,6 +29,7 @@ const Slide = ({ singleCase }) => {
                   </p>
                 </div>
             </div>
+        </Link>    
     </div>
   );
 };
@@ -107,6 +110,7 @@ export const Slides = ({ cases }) => {
 
   return (
     <div>
+
       <Slider {...settings}>
       
         {cases.map(singleCase => (

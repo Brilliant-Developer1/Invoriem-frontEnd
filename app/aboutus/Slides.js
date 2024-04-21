@@ -6,7 +6,7 @@ import './Slides.css'
 
 
 const Slide = ({ team }) => {
-    // 
+    
   return (
     <div className='flex team_container items-start md:items-center  flex-col md:flex-row mt-10 md:mt-20'>
         <div className=" max-w-60 sm:max-w-96 lg:max-w-96 h-auto grayscale">

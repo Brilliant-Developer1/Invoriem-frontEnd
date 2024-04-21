@@ -2,7 +2,7 @@ import { Aboutus } from "./Aboutus";
 import OurTeam from "./OurTeam";
 
 export const metadata = {
-  title: 'About us',
+  title: 'About us - invoriem',
   description: 'Crafting Dreams, Building Futures',
 };
 

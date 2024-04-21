@@ -1,9 +1,9 @@
-import { Brands } from "./components/Brands/Brands";
-import CaseStudies from "./components/CaseStudies/CaseStudies";
-import { ClientsCount } from "./components/ClientsCount/ClientsCount";
-import Hero from "./components/Hero/Hero";
-import { Testimonial } from "./components/Testimonial/Testimonial";
-import { WeAreInvoriem } from "./components/WeAreInvoriem/WeAreInvoriem";
+import { Brands } from "./home/Brands/Brands";
+import CaseStudies from "./home/CaseStudies/CaseStudies";
+import { ClientsCount } from "./home/ClientsCount/ClientsCount";
+import Hero from "./home/Hero/Hero";
+import { Testimonial } from "./home/Testimonial/Testimonial";
+import { WeAreInvoriem } from "./home/WeAreInvoriem/WeAreInvoriem";
 
 export default function Home() {
   return (

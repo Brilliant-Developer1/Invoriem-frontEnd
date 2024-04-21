@@ -1,5 +1,6 @@
+import { PrimaryButton } from "@/app/components/PrimaryButton";
 import Link from "next/link";
-import { PrimaryButton } from "../components/PrimaryButton";
+
 
 export const Aboutus = () => {
   return (

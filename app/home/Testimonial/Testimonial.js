@@ -68,8 +68,8 @@ export const Testimonial = () => {
   return (
     <section>
       <div className="container mt-20 ">
-      <div className='p-1 sm:p-2'>
-      <h2 className="text-teal mb-3 text-3xl sm:text-5xl font-bold ">OUR TESTIMONIALS</h2>
+      <div className='p-5 sm:p-2'>
+      <h2 className="text-teal mb-3 text-4xl sm:text-5xl font-bold ">Testimonials</h2>
       </div>
       
     </div>

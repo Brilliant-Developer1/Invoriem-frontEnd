@@ -1,5 +1,5 @@
-"use client"
-import React, { useEffect } from 'react';
+
+
 
 export const WeAreInvoriem = () => {
   return (
@@ -17,7 +17,6 @@ export const WeAreInvoriem = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-        
       </div>
     </section>
   )

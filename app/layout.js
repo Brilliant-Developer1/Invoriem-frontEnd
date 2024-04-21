@@ -1,7 +1,7 @@
 import { Poppins } from 'next/font/google';
 import './globals.css';
-import { NavBar } from './components/NavBar/NavBar';
-import { Footer } from './components/Footer/Footer';
+import { NavBar } from './home/NavBar/NavBar';
+import { Footer } from './home/Footer/Footer';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const poppins = Poppins({ 
