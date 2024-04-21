@@ -4,7 +4,7 @@ import { PrimaryButton } from "../../components/PrimaryButton";
 // import heroimage from "@/public/images/heroimage.jpg"
 export default function Hero() {
   const heroStyle = {
-    backgroundImage: `url(https://images.unsplash.com/photo-1577541924560-2e647cce51d2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+    backgroundImage: `url(https://i.postimg.cc/TwBpRbBX/hero.jpg)`,
   };
   return (
     <header className="hero min-h-[1080px] justify-center md:justify-start " style={heroStyle}>

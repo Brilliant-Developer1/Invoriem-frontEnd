@@ -7,8 +7,8 @@ function Slide({src}) {
     
     return (
         <div className='team_container px-5'>
-        <div className="w-full max-h-full sm:max-h-[230px] lg:max-h-[293px] ">
-            <img className='min-h-full sm:min-h-[230px] lg:min-h-[293px]' src={src} alt={`Image`} />
+        <div className=" ">
+            <img className='' src={src} alt={`Image`} />
         </div>
     </div>
     );

@@ -15,12 +15,12 @@ const TheChallenge = ({singleCase}) => {
       </div>
     </section>
     {/* 3 Images */}
-    <section className='mt-8 md:mt-20 flex flex-col xl:flex-row gap-10 justify-center items-center xl:items-stretch '>
-        <div className='max-w-4xl xl:max-w-[350px] flex flex-col gap-10 justify-between'>
+    <section className='mt-8 md:mt-20 flex flex-col xl:flex-row gap-10 justify-center items-center  '>
+        <div className='max-w-4xl xl:max-w-[280px] flex flex-col gap-10 justify-between'>
             <Image className='w-auto h-auto' width={1000} height={1000} src={imageUrl1} alt={`Image 1`} />
             <Image className='w-auto h-auto' width={1000} height={1000} src={imageUrl2} alt={`Image 2`} />
         </div>
-        <div className='max-w-4xl xl:max-w-[850px]'>
+        <div className=''>
         <Image className='w-auto h-auto' width={1000} height={1000} src={imageUrl3} alt={`Image 3`} />
         </div>
     </section>
