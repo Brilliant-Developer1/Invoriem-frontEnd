@@ -4,6 +4,7 @@ import Header from "./Header";
 import TheChallenge from "./TheChallenge";
 import Slides from "./Slides";
 import Solution from "./Solution";
+import Outcome from "./Outcome";
 
 
 const ImageDetailPage = async ({ params }) => {
@@ -17,6 +18,7 @@ const ImageDetailPage = async ({ params }) => {
       <TheChallenge singleCase={singleCase}></TheChallenge>
       <Slides singleCase={singleCase}></Slides>
      <Solution singleCase={singleCase}></Solution>
+     <Outcome singleCase={singleCase}></Outcome>
      
     </main>
   );

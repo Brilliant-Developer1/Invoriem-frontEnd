@@ -9,17 +9,8 @@ export const WeAreInvoriem = () => {
       <h2 className= "text-teal mb-3 text-4xl sm:text-5xl font-bold ">We are Invoriem</h2>
       <p className="mb-5 text-gray-600">We fulfill international property developments</p>
       </div>
-      <div className=" ">
-      {/* <iframe
-          className='w-full h-60 sm:h-80 md:h-[600px]'
-          src="https://www.youtube.com/embed/ByRHUzaYOBI"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe> */}
+      <div>
         <Player thumb={thumb} url={url}></Player>
-
       </div>
     </section>
   )

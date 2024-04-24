@@ -8,7 +8,6 @@ export const Player = ({url,thumb}) => {
   const [currentTime, setCurrentTime] = useState(0);
   const [totalTime, setTotalTime] = useState(0);
   const [progressPercentage, setProgressPercentage] = useState(0);
-  const [isFullscreen, setIsFullscreen] = useState(false);
   const progressRef = useRef(null);
   const volumeRef = useRef(null);
   const playbackRateRef = useRef(null);
@@ -19,7 +18,6 @@ export const Player = ({url,thumb}) => {
   useEffect(() => {
     videoRef.current.src = url;
     videoRef.current.poster = thumb
-    console.log(thumb)
   }, [url,thumb]);
 //   
 
@@ -103,7 +101,7 @@ export const Player = ({url,thumb}) => {
   
   
     return (
-      <section className="player mt-10 container">
+      <section className="player my-16 container">
         <video ref={videoRef} className="player__video viewer" onClick={handlePlay} onDoubleClick={toggleFullscreen} onTimeUpdate={handleProgress}></video>
       <div className="player__controls">
         <div className="video_time">

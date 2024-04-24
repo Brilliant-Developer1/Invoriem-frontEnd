@@ -1,11 +1,23 @@
+import { Player } from '@/app/components/VideoPlayer/Player';
 import React from 'react'
-
+import Image from 'next/image'
 const Solution = ({singleCase}) => {
-    const {solutionText1,videoUrl1} = singleCase;
+    const {solutionText1,solutionText2,videoUrl2,imageUrl4,imageUrl5} = singleCase;
+    const thumb = "https://i.postimg.cc/1Xg091Bb/thumb.jpg";
+
+    // Split and Capitalize
+const words = solutionText2.split(' ');
+const first50Words = words.slice(0, 50).join(' ');
+const last30WordsArray = words.slice(-30).join(' ').split(' ');
+// Capitalize the first letter of the last words
+if (last30WordsArray.length > 0) {
+    last30WordsArray[0] = last30WordsArray[0].charAt(0).toUpperCase() + last30WordsArray[0].slice(1);
+}
+const last30Words = last30WordsArray.join(' ');
 
   return (
-    <article className='mt-8 md:mt-20 px-5 '>
-        {/* Title and subtitle */}
+    <article className='mt-20 px-5 '>
+        {/* Title and Text */}
     <section className="  flex flex-col md:flex-row  justify-around ">
       <h1 className="text-3xl font-extrabold grow">Solution</h1>
       <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-gray-500 leading-loose pr-0 xl:pr-20">
@@ -14,16 +26,29 @@ const Solution = ({singleCase}) => {
         </p>
       </div>
     </section>
+    {/* Video */}
     <section>
-    <div className="mt-0 sm:mt-20 ">
-      <iframe
-          className='w-full h-60 sm:h-80 md:h-[720px]'
-          src={videoUrl1}
-          title="Video player"
-          allowFullScreen
-          frameborder="0"
-        ></iframe>
-        
+    <Player thumb={thumb} url={videoUrl2}></Player>
+    </section>
+    {/* More Text */}
+    <section className="  flex flex-col md:flex-row  justify-around ">
+      <h1 className="text-3xl font-extrabold grow"></h1>
+      <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-gray-500 leading-loose pr-0 xl:pr-20">
+        <p>
+          {first50Words}.
+        </p>
+        <p className='mt-8'>
+          {last30Words}.
+        </p>
+      </div>
+    </section>
+    {/* Last 2 Images */}
+    <section className='mt-20 flex flex-col md:flex-row justify-center items-center gap-10'>
+      <div className=''>
+      <Image className='w-auto h-auto' width={1000} height={1000} src={imageUrl4} alt={`Image 1`} />  
+      </div>
+      <div>
+      <Image className='w-auto h-auto' width={1000} height={1000} src={imageUrl5} alt={`Image 2`} />
       </div>
     </section>
     </article>
