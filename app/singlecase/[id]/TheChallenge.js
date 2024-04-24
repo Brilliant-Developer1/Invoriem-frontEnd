@@ -5,10 +5,10 @@ const TheChallenge = ({singleCase}) => {
     const {challengeText,imageUrl1,imageUrl2,imageUrl3} = singleCase;
   return (
     <article className='mt-8 md:mt-20 px-5 '>
-    {/* Title and subtile */}
+    {/* Title and subtitle */}
     <section className="  flex flex-col md:flex-row  justify-around ">
       <h1 className="text-3xl font-extrabold grow">The challenge</h1>
-      <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-gray-500 leading-loose">
+      <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-gray-500 leading-loose pr-0 xl:pr-20">
         <p>
           {challengeText}
         </p>

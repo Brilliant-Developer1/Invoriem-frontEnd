@@ -47,7 +47,7 @@ const Slides = ({singleCase}) => {
             ]
       };
   return (
-    <div>
+    <section>
     <Slider {...settings}>
       
       <Slide src={imageUrl1} />
@@ -56,7 +56,7 @@ const Slides = ({singleCase}) => {
       <Slide src={imageUrl4} />
        
      </Slider>
-    </div>
+    </section>
   )
 }
 

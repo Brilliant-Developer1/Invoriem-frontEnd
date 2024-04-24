@@ -1,3 +1,4 @@
+import { Player } from "./components/VideoPlayer/Player";
 import { Brands } from "./home/Brands/Brands";
 import CaseStudies from "./home/CaseStudies/CaseStudies";
 import { ClientsCount } from "./home/ClientsCount/ClientsCount";
