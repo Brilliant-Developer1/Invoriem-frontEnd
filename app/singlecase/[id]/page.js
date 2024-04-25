@@ -17,9 +17,9 @@ const ImageDetailPage = async ({ params }) => {
   return (
     // Dynamic route from Home page Case Studies
     <main className="container">
-      <Header singleCase={singleCase}></Header>
-      <TheChallenge singleCase={singleCase}></TheChallenge>
-      <Slides singleCase={singleCase}></Slides>
+     <Header singleCase={singleCase}></Header>
+     <TheChallenge singleCase={singleCase}></TheChallenge>
+     <Slides singleCase={singleCase}></Slides>
      <Solution singleCase={singleCase}></Solution>
      <Outcome singleCase={singleCase}></Outcome>
      <MoreCaseStudies singleCase={singleCase}></MoreCaseStudies>

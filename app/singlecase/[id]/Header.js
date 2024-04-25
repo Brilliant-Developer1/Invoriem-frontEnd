@@ -9,7 +9,7 @@ const Header = ({singleCase}) => {
       {/* Page Title */}
       <div className='p-5 sm:p-2'>
         <h1 className="text-teal mb-3 text-4xl sm:text-5xl font-bold ">{name}</h1>
-      <p className="text-gray-600">Augue eget nisi, turpis vel nibh urna, ut quam odio libero.</p>
+      <p className="text-gray-600">Architecting Modern Marvels: Transforming Vision into Reality, One Brick at a Time.</p>
       </div>
       {/* Video */}
     <section>

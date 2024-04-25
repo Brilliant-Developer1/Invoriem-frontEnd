@@ -90,7 +90,7 @@ export const Gallery = ({ images }) => {
           <div className='w-full h-auto '>
           {!imageLoaded && (
                 <div className='  min-w-full min-h-full flex justify-center'>
-                  <span className="loading loading-dots loading-lg text-teal"></span>
+                  <span className=" loading loading-dots myloading text-teal"></span>
                 </div>
               )}
           <Image
@@ -99,7 +99,7 @@ export const Gallery = ({ images }) => {
                 src={selectedImage.url}
                 alt={selectedImage.alt}
                 onLoad={() => setImageLoaded(true)}
-                className={imageLoaded ? "" : "w-0 h-0"}
+                className={`${imageLoaded ? "" : "w-0 h-0"} single_image`}
               />
               
               

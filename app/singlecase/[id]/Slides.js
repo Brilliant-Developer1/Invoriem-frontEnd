@@ -2,20 +2,25 @@
 import React from 'react'
 import Slider from 'react-slick';
 import '../../aboutus/Slides.css'
+import Image from 'next/image';
 
 function Slide({src}) {
-    
     return (
         <div className='team_container px-5'>
         <div className=" ">
-            <img className='' src={src} alt={`Image`} />
+            <Image width={1280}
+                height={1280} className='' src={src} alt={`Image`} />
         </div>
     </div>
     );
   }
 
 const Slides = ({singleCase}) => {
-    const {imageUrl1,imageUrl2,imageUrl3,imageUrl4} = singleCase.slideImages[0];
+    // Images Src
+    const images = Object.keys(singleCase.slideImages[0]).map(key => {
+      return singleCase.slideImages[0][key];
+    });
+   
     let settings = {
         dots: false,
         centerMode: true,
@@ -47,15 +52,14 @@ const Slides = ({singleCase}) => {
             ]
       };
   return (
-    <section>
+    <section className=''>
     <Slider {...settings}>
-      
-      <Slide src={imageUrl1} />
-      <Slide src={imageUrl2} />
-      <Slide src={imageUrl3} />
-      <Slide src={imageUrl4} />
+      {images.map((src , i) => (
+        <Slide key={i} src={src} />
+      ))}
        
      </Slider>
+     <div className='border-b-2 border-teal mt-16'></div>
     </section>
   )
 }

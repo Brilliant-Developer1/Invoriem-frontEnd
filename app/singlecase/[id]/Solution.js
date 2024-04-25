@@ -16,7 +16,7 @@ if (last30WordsArray.length > 0) {
 const last30Words = last30WordsArray.join(' ');
 
   return (
-    <article className='mt-20 px-5 '>
+    <article className='mt-16 px-5 '>
         {/* Title and Text */}
     <section className="  flex flex-col md:flex-row  justify-around ">
       <h1 className="text-3xl font-extrabold grow">Solution</h1>
