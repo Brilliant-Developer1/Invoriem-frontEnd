@@ -3,7 +3,7 @@ import React from 'react'
 
 const Header = ({singleCase}) => {
     const {name,videoUrl1} = singleCase;
-    const thumb = "https://i.postimg.cc/1Xg091Bb/thumb.jpg";
+    const thumb = "https://i.postimg.cc/DyBJLxdf/thumb.jpg";
   return (
     <header className=' mt-10'>
       {/* Page Title */}

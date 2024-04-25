@@ -5,6 +5,9 @@ import TheChallenge from "./TheChallenge";
 import Slides from "./Slides";
 import Solution from "./Solution";
 import Outcome from "./Outcome";
+import MoreCaseStudies from "./MoreCaseStudies";
+import SayHi from "@/app/components/SayHi";
+
 
 
 const ImageDetailPage = async ({ params }) => {
@@ -19,7 +22,8 @@ const ImageDetailPage = async ({ params }) => {
       <Slides singleCase={singleCase}></Slides>
      <Solution singleCase={singleCase}></Solution>
      <Outcome singleCase={singleCase}></Outcome>
-     
+     <MoreCaseStudies singleCase={singleCase}></MoreCaseStudies>
+     <SayHi></SayHi>
     </main>
   );
 };

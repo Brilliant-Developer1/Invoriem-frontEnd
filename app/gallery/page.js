@@ -1,4 +1,5 @@
 
+import SayHi from "../components/SayHi";
 import { Gallery } from "./Gallery";
 import { images } from '@/public/Data/GalleryData';
 
@@ -16,6 +17,7 @@ export const metadata = {
       </div>
       <div className="mt-0 sm:mt-10 ">
       <Gallery images={images} />
+      <SayHi></SayHi>
         
       </div>
     </main>

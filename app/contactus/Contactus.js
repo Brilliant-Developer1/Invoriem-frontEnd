@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Contactus = () => {
   return (
-    <div className="mt-8 md:mt-20 flex flex-col md:flex-row p-5 justify-around">
+    <div className="mt-8 md:mt-20 flex flex-col md:flex-row p-5 justify-between">
       <div className='text-5xl md:text-7xl  font-extrabold leading-snug md:leading-snug'>
         <p>Hello</p>
         <p>Bonjour</p>
@@ -15,6 +15,7 @@ export const Contactus = () => {
         <p>+971 5113655</p>
         <p>41598 Musaafah 12 St, Abu Dhabi, UAE</p>
       </div>
+      <div></div>
     </div>
   );
 };

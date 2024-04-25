@@ -1,3 +1,4 @@
+import SayHi from "../components/SayHi";
 import { Contactus } from "./Contactus";
 
 export const metadata = {
@@ -7,8 +8,9 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="container h-auto sm:h-screen ">
+    <main className="container h-auto md:h-screen ">
       <Contactus/>
+      <SayHi></SayHi>
     </main>
   );
 }

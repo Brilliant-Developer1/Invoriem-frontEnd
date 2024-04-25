@@ -21,7 +21,7 @@ export const Aboutus = () => {
         </p>
         <p className="mt-14 mb-10 text-teal text-2xl">We&#39;d love to learn more about your project.</p>
         <Link href="/contactus" >
-            <PrimaryButton text="Let&lsquo;s Talk" background="teal" />
+            <PrimaryButton width='w-full' text="Let&lsquo;s Talk" background="teal" />
             </Link>
       </div>
     </section>

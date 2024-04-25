@@ -1,7 +1,7 @@
 "use client";
 import classNames from 'classnames';
 import React, { useState } from 'react';
-export const PrimaryButton = ({ text, background }) => {
+export const PrimaryButton = ({ text, background, width }) => {
   const isWhiteBackground = background === 'white';
   const isTealBackground = background === 'teal';
   const isEmptyBackground = background === '';
@@ -12,6 +12,9 @@ export const PrimaryButton = ({ text, background }) => {
     'pr-4',
     'pl-8',
     'flex',
+    'sm:w-auto',
+    `${width}`,
+    'justify-center',
     'items-center',
     'rounded-none',
     'transition-all',

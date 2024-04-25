@@ -1,7 +1,7 @@
 import { Player } from "@/app/components/VideoPlayer/Player"  
 
 export const WeAreInvoriem = () => {
-  const thumb = "https://i.postimg.cc/1Xg091Bb/thumb.jpg";
+  const thumb = "https://i.postimg.cc/nzjYw621/thumb.jpg";
   const url = 'https://cdn.coverr.co/videos/coverr-a-glass-building-in-lisbon-6636/720p.mp4';
   return (
     <section className="container mt-40">
