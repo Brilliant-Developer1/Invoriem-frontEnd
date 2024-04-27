@@ -17,10 +17,6 @@ export const Gallery = ({ images }) => {
     setFilteredImages(updatedFilteredImages);
   }, [filter,images]);
 
-  useEffect(() => {
-    console.log("Component rerendered");
-  }, [imageLoaded]);
-
   const openModal = (image) => {
     setSelectedImage(image);
     document.body.classList.add('modal-open');
