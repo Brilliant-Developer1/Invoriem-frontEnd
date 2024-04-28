@@ -1,4 +1,3 @@
-import { Player } from "./components/VideoPlayer/Player";
 import { Brands } from "./home/Brands/Brands";
 import CaseStudies from "./home/CaseStudies/CaseStudies";
 import { ClientsCount } from "./home/ClientsCount/ClientsCount";
@@ -8,7 +7,7 @@ import { WeAreInvoriem } from "./home/WeAreInvoriem/WeAreInvoriem";
 
 export default function Home() {
   return (
-    <main>
+    <main >
       <Hero></Hero>
       <CaseStudies></CaseStudies>
       <ClientsCount></ClientsCount>

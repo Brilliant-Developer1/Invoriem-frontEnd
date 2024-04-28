@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useContext } from 'react'
 import Slider from 'react-slick'
 import logo1 from '@/public/images/p_logo_01.webp'
 import logo2 from '@/public/images/p_logo_02.webp'
@@ -8,6 +8,7 @@ import logo4 from '@/public/images/p_logo_04.webp'
 import logo5 from '@/public/images/p_logo_05.webp'
 import logo6 from '@/public/images/p_logo_06.webp'
 import Image from 'next/image'
+import { ThemeContext } from '@/context/ThemeContext';
 
 const Slide = ({ src }) => {
   return (
@@ -20,6 +21,8 @@ const Slide = ({ src }) => {
 };
 
 export const Brands = () => {
+  const { theme } = useContext(ThemeContext);
+  
   const slickSettings = {
     infinite: true,
         slidesToShow: 4,
@@ -59,7 +62,7 @@ export const Brands = () => {
         ],
   };
   return (
-    <section className="mt-20 bg-teal">
+    <section className={`my-20 ${theme === 'dark'? 'bg-orange-500' : 'bg-teal'}`}>
         <div className="container">
           <Slider {...slickSettings}>
             <Slide src={logo1} />

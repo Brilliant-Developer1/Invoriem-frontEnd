@@ -3,24 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --darkgrey: rgb(31, 31, 31); /* Dark grey */
-  --teal: rgb(17, 68, 85); /* Teal */
-  --white: rgb(255, 255, 255); /* White */
+  background-color: #fff;
+  /* --b1: #114455; */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --white: rgb(255, 255, 255); /* White */
-    --darkgrey: rgb(31, 31, 31); /* Dark grey */
+    --teal: #114455;
   }
 }
 
-body {
-  color: var(--teal);
-}
+@media (prefers-color-scheme: light) {
+  :root {
+    --teal: #fff;
+  }
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+/* 
+--darkgrey: rgb(31, 31, 31);
+--teal: rgb(17, 68, 85); 
+--white: rgb(255, 255, 255); 
+*/

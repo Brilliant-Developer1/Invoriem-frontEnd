@@ -7,22 +7,53 @@ module.exports = {
     
   ],
   plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["light"], 
-    
-  },
   theme: {
     extend: {
       colors: {
-        'darkg': 'rgb(31, 31, 31)',
-        'teal': 'rgb(17, 68, 85)',
-        'white': 'rgb(255, 255, 255)',
+        teal: {
+          DEFAULT: 'var(--teal)',
+        },
+        
       },
     },
+  
+
+  daisyui: {
+    themes: ["light","dark"],
+  },
     container: {
       center: true,
     },
-    
   },
   
 };
+/*
+theme: {
+    extend: {
+      colors: {
+        // 'teal': '#114455',
+        'teal': 'rgb(var(--teal))',
+      },
+    },
+  
+
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["[data-theme=light]"],
+          "--teal": "17, 68, 85",
+        },
+      },
+      // dark theme
+      {
+        dark: {
+          ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
+          "--teal": "255, 255, 255",
+        },
+      }
+    ],
+
+    
+  },
+*/

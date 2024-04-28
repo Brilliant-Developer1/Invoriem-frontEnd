@@ -8,7 +8,7 @@ Invoriem is a platform designed to showcase construction projects, provide infor
 
 ## Live website Invoriem-frontEnd
 
-https://invoriem-front-end.vercel.app/
+Invoriem - https://invoriem-front-end.vercel.app/
 
 Git Hub - https://github.com/Brilliant-Developer1/Invoriem-frontEnd
 
@@ -16,16 +16,15 @@ Git Hub - https://github.com/Brilliant-Developer1/Invoriem-frontEnd
 
 - Next.js
 - React
+- Tailwind CSS
+- DaisyUI
 - React Countup
 - React Scroll Trigger
 - React Slick
-- Framer Motion
 - Slick Carousel
+- Framer Motion
 - Classnames
 - [jsonsilo API](https://jsonsilo.com)
-
-- Tailwind CSS
-- DaisyUI
 
 ## Project Overview
 

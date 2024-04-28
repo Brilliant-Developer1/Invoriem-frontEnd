@@ -4,10 +4,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Link from 'next/link';
 
-const Slide = ({ singleCase }) => {
+const Slide = ({ singleCase , route }) => {
+  
   return (
     <div className=' pr-0 sm:pr-10 pl-10 '>
-        <Link href={`singlecase/${singleCase.id}`}>
+        <Link href={`${route}${singleCase.id}`}>
         <div className="w-full h-[550px] relative ">
               <div
                 className="w-full h-[550px] z-10 absolute overflow-hidden"
@@ -69,7 +70,7 @@ function SampleNextArrow(props) {
     </div>  
   );
 }
-export const Slides = ({ cases }) => {
+export const Slides = ({ cases , route }) => {
   let settings = {
     dots: true,
     infinite: true,
@@ -114,7 +115,7 @@ export const Slides = ({ cases }) => {
       <Slider {...settings}>
       
         {cases.map(singleCase => (
-          <Slide key={singleCase.id} singleCase={singleCase} />
+          <Slide key={singleCase.id} singleCase={singleCase} route={route} />
         ))}
         
       </Slider>

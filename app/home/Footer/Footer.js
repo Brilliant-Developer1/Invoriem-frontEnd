@@ -2,7 +2,7 @@
 
 export const Footer = () => {
   return (
-    <footer className="container my-10 sm:my-5 flex flex-col sm:flex-row items-center text-center sm:text-left sm:justify-between p-4 text-gray-600 bg-white">
+    <footer className="container  flex flex-col sm:flex-row items-center text-center sm:text-left sm:justify-between p-4 text-gray-600 ">
   <aside className="items-center grid-flow-col py-5">
     <p>Copyright © 2024 - All right reserved</p>
   </aside> 

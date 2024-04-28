@@ -15,7 +15,7 @@ const MoreCaseStudies = async ({singleCase}) => {
       <h2 className="text-teal mb-3 text-3xl sm:text-4xl font-bold ">More Case Studies</h2>
       </div>
       <div className="mt-0 sm:mt-20 ">
-      <Slides cases={filteredCases}></Slides>
+      <Slides cases={filteredCases} route=''></Slides>
         
       </div>
     </section>

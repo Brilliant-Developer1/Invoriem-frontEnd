@@ -2,7 +2,8 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Slides.css'
+import './Slides.css';
+import Image from 'next/image';
 
 
 const Slide = ({ team }) => {
@@ -10,7 +11,7 @@ const Slide = ({ team }) => {
   return (
     <div className='flex team_container items-start md:items-center  flex-col md:flex-row mt-10 md:mt-20'>
         <div className=" max-w-60 sm:max-w-96 lg:max-w-96 h-auto grayscale">
-            <img src={team.image} alt={`Member ${team.id}`} />
+            <Image width={1280} height={1280} src={team.image} alt={`Member ${team.id}`} />
         </div>
         <div className='py-8 md:py-0 pl-0 md:pl-10'>
         <p className='text-3xl font-bold'>{team.name}</p>
