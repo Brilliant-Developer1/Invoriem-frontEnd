@@ -62,7 +62,7 @@ export const Brands = () => {
         ],
   };
   return (
-    <section className={`my-20 ${theme === 'dark'? 'bg-orange-500' : 'bg-teal'}`}>
+    <section className={`my-20 ${theme === 'dark'? 'bg-teal-700' : 'bg-teal'}`}>
         <div className="container">
           <Slider {...slickSettings}>
             <Slide src={logo1} />

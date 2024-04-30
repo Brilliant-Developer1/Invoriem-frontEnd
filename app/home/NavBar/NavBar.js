@@ -7,14 +7,14 @@ import Image from 'next/image';
 import { ThemeContext } from '@/context/ThemeContext';
 
 export const NavBar = () => {
-  const { changeTheme } = useContext(ThemeContext);
-  const storedTheme = localStorage.getItem('theme') || 'light';
+  const { changeTheme,theme } = useContext(ThemeContext);
+
   
   const [navbar, setNavbar] = useState(false);
   
 
   return (
-    <nav className={`w-full `}>
+    <nav className={`w-full sticky top-0 z-50 ${theme === 'light' ? 'bg-white' : 'bg-teal-700'}`}>
       <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           {/* LOGO */}
@@ -137,9 +137,9 @@ export const NavBar = () => {
                 <li>
                 <div className="dropdown dropdown-hover">
                   <div tabIndex={0} role="button" className="btn m-1">Theme</div>
-                  <ul tabIndex={0} className="bg-slate-100 dropdown-content z-[1] menu p-2 shadow rounded-box w-auto">
-                    <li><a onClick={() => changeTheme("light")} >Light</a></li>
-                    <li><a onClick={() => changeTheme("dark")} >Dark</a></li>
+                  <ul tabIndex={0} className="bg-gray-200 text-black dropdown-content z-[1] menu p-2 shadow rounded-box w-auto">
+                    <li ><a className='hover:bg-white' onClick={() => changeTheme("light")} >Light</a></li>
+                    <li><a className='hover:bg-white' onClick={() => changeTheme("dark")} >Dark</a></li>
                   </ul>
                 </div>
                 </li>

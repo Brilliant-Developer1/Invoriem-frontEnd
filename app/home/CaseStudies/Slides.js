@@ -3,8 +3,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Link from 'next/link';
+import { useContext } from 'react';
+import { ThemeContext } from '@/context/ThemeContext';
 
 const Slide = ({ singleCase , route }) => {
+  const { theme } = useContext(ThemeContext);
   
   return (
     <div className=' pr-0 sm:pr-10 pl-10 '>
@@ -20,7 +23,7 @@ const Slide = ({ singleCase , route }) => {
               >
                 <div className="absolute top-3/4 -left-9">
                   <p className="text-6xl  md:text-7xl font-extrabold">
-                    <span className="text-white">{singleCase.name}</span>
+                    <span className={`${theme === 'dark'?'text-teal-500' : 'text-white'}`}>{singleCase.name}</span>
                   </p>
                 </div>
               </div>

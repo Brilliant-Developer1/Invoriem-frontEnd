@@ -14,6 +14,10 @@ module.exports = {
           DEFAULT: 'var(--teal)',
         },
         
+        grey: {
+          DEFAULT: 'var(--grey)',
+        },
+        
       },
     },
   

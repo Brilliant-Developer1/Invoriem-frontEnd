@@ -7,8 +7,8 @@ const TheChallenge = ({singleCase}) => {
     <article className='mt-8 md:mt-20 px-5 '>
     {/* Title and subtitle */}
     <section className="  flex flex-col md:flex-row  justify-around ">
-      <h1 className="text-3xl font-extrabold grow">The challenge</h1>
-      <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-gray-500 leading-loose pr-0 xl:pr-20">
+      <h1 className="text-3xl font-extrabold grow text-black">The challenge</h1>
+      <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-grey leading-loose pr-0 xl:pr-20">
         <p>
           {challengeText}
         </p>
@@ -26,7 +26,7 @@ const TheChallenge = ({singleCase}) => {
     </section>
     {/* Text Under images */}
     <section className='max-w-xl text-justify mx-auto py-32'>
-        <strong className='text-gray-500 text-xl '>
+        <strong className='text-grey text-xl '>
           {challengeText}
         </strong>
     </section>

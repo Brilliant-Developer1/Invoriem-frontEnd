@@ -1,15 +1,17 @@
 'use client';
-import React, { useState } from 'react';
+import { ThemeContext } from '@/context/ThemeContext';
+import React, { useContext, useState } from 'react';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 
 export const ClientsCount = () => {
   const [scrollCount, setScrollCount] = useState(false);
+  const { theme } = useContext(ThemeContext);
   return (
     <ScrollTrigger
       onEnter={() => setScrollCount(true)}
       onExit={() => setScrollCount(false)}
-      className="mt-20 bg-gray-200 text-black"
+      className={`my-20  ${theme === 'dark'? 'bg-teal-700 text-white'  : 'bg-gray-200 text-black'}`}
     >
       <section className="container py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-start sm:justify-items-center pl-10 sm:pl-0">
         <div className='min-w-[200px] flex flex-row sm:flex-col items-center sm:items-start sm:justify-center'>
@@ -42,7 +44,7 @@ export const ClientsCount = () => {
               delay={0}
             />}
             </p>
-            <p className="text-xl text-gray-600">PROJECTS</p>
+            <p className={`text-xl ${theme === 'dark'? 'text-slate-200' : 'text-gray-600'}`}>PROJECTS</p>
           </div>
         </div>
         <div className='min-w-[200px] flex flex-row sm:flex-col items-center sm:items-start sm:justify-center'>
@@ -70,7 +72,7 @@ export const ClientsCount = () => {
               delay={0}
             />}
             </p>
-            <p className="text-xl text-gray-600">HAPPY CLIENTS</p>
+            <p className={`text-xl ${theme === 'dark'? 'text-slate-200' : 'text-gray-600'}`}>HAPPY CLIENTS</p>
           </div>
         </div>
         <div className='min-w-[200px] flex flex-row sm:flex-col items-center sm:items-start sm:justify-center'>
@@ -88,7 +90,7 @@ export const ClientsCount = () => {
               delay={0}
             />}
             </p>
-            <p className="text-xl text-gray-600">QUALIFIED STUFF</p>
+            <p className={`text-xl ${theme === 'dark'? 'text-slate-200' : 'text-gray-600'}`}>QUALIFIED STUFF</p>
           </div>
         </div>
         <div className='min-w-[200px] flex flex-row sm:flex-col items-center sm:items-start sm:justify-center'>
@@ -108,7 +110,7 @@ export const ClientsCount = () => {
               separator=""
             />}
             </p>
-            <p className="text-xl text-gray-600">MACHINERIES</p>
+            <p className={`text-xl ${theme === 'dark'? 'text-slate-200' : 'text-gray-600'}`}>MACHINERIES</p>
           </div>
         </div>
       </section>

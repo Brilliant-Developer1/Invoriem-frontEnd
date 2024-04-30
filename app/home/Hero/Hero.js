@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <header className="hero min-h-[1080px] justify-center md:justify-start " style={heroStyle}>
     <div className="max-w-md ml-0  md:ml-20 lg:ml-36 p-2 sm:p-0">
-      <h1 className="mb-5 text-5xl font-bold">We build dreams, not just walls</h1>
+      <h1 className="mb-5 text-5xl text-teal font-bold">We build dreams, not just walls</h1>
       <p className="mb-5 text-gray-600">Fulfill your international property developments with us</p>
       <Link href="/contactus">
             <PrimaryButton text="Let&lsquo;s Talk" background="teal" />

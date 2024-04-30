@@ -19,8 +19,8 @@ const last30Words = last30WordsArray.join(' ');
     <article className='mt-16 px-5 '>
         {/* Title and Text */}
     <section className="  flex flex-col md:flex-row  justify-around ">
-      <h1 className="text-3xl font-extrabold grow">Solution</h1>
-      <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-gray-500 leading-loose pr-0 xl:pr-20">
+      <h1 className="text-3xl font-extrabold grow text-black">Solution</h1>
+      <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-grey leading-loose pr-0 xl:pr-20">
         <p>
           {solutionText1}
         </p>
@@ -33,7 +33,7 @@ const last30Words = last30WordsArray.join(' ');
     {/* More Text */}
     <section className="  flex flex-col md:flex-row  justify-around ">
       <h1 className="text-3xl font-extrabold grow"></h1>
-      <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-gray-500 leading-loose pr-0 xl:pr-20">
+      <div className="max-w-[30rem] lg:max-w-[42rem] mt-4 md:mt-0 text-grey leading-loose pr-0 xl:pr-20">
         <p>
           {first50Words}.
         </p>

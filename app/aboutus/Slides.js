@@ -15,7 +15,7 @@ const Slide = ({ team }) => {
         </div>
         <div className='py-8 md:py-0 pl-0 md:pl-10'>
         <p className='text-3xl font-bold'>{team.name}</p>
-        <p className='mt-4 text-gray-500'>{team.role}</p>
+        <p className='mt-4 text-grey'>{team.role}</p>
         </div>
     </div>
   );

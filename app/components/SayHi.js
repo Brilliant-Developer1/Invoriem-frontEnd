@@ -5,7 +5,7 @@ const SayHi = () => {
   return (
     <section className='mt-10 p-5 flex justify-between flex-col md:flex-row'>
         <div>
-            <h2 className="text-3xl md:text-5xl font-bold py-10 md:py-0">
+            <h2 className="text-teal text-3xl md:text-5xl font-bold py-10 md:py-0">
                 Say hi,
             </h2>
         </div>

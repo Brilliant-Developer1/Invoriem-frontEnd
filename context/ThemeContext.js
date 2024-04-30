@@ -17,9 +17,12 @@ export const ThemeProvider = ({children}) => {
     useEffect(() => {
         const root = document.documentElement;
         const tealValue = theme === "light" ? "#114455" : "#fff";
+        const greyValue = theme === "light" ? "rgb(75 85 99)" : "rgb(226 232 240)";
         const backgroundColor = theme === "light" ? "#fff" : "#114455";
         root.style.setProperty('--teal', tealValue);
+        root.style.setProperty('--grey', greyValue);
         root.style.setProperty('--fallback-b1', backgroundColor);
+        
     }, [theme]);
 
     if(!isMounted){

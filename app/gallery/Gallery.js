@@ -36,8 +36,8 @@ export const Gallery = ({ images }) => {
 
   return (
     <section >
-      <ul className="menu menu-vertical lg:menu-horizontal m-3 md:m-0 bg-base-200 rounded-box">
-        <li>
+      <ul className="menu menu-vertical lg:menu-horizontal m-3 md:m-0 bg-base-200 rounded-box ">
+        <li >
           <button onClick={() => setFilter('all')}>All</button>
         </li>
         <li>

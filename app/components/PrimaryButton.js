@@ -1,11 +1,13 @@
 "use client";
+import { ThemeContext } from '@/context/ThemeContext';
 import classNames from 'classnames';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 export const PrimaryButton = ({ text, background, width }) => {
   const isWhiteBackground = background === 'white';
   const isTealBackground = background === 'teal';
-  const isEmptyBackground = background === '';
+  
   const [isHovered, setIsHovered] = useState(false);
+  const { theme } = useContext(ThemeContext);
 
   const buttonClasses = classNames(
     'py-2',
@@ -23,16 +25,34 @@ export const PrimaryButton = ({ text, background, width }) => {
     'text-lg',
     'font-semibold',
     {
-      'border border-teal': isWhiteBackground || isEmptyBackground,
-      'bg-white text-teal': isWhiteBackground,
-      'hover:bg-teal hover:text-white hover:border-white': isWhiteBackground || isEmptyBackground,
-      'bg-teal text-white border border-teal': isTealBackground,
-      'hover:bg-white hover:text-teal hover:border-teal hover:border': isTealBackground,
+      'border border-teal bg-white text-teal hover:bg-teal hover:text-white hover:border-white': isWhiteBackground && theme === 'light',
+      'bg-teal text-white border border-teal hover:bg-white hover:text-teal': isTealBackground && theme === 'light',
+      
+      'border border-teal bg-teal-700 text-teal hover:bg-teal hover:text-teal-700 hover:border-white': isWhiteBackground && theme === 'dark',
+      'bg-teal text-teal-700 border border-teal-700 hover:bg-teal-700 hover:text-teal': isTealBackground && theme === 'dark',
+
+
     }
   );
 
-  const svgFillColor = isWhiteBackground || isEmptyBackground ? '#114455' : '#fff';
-  const svgHoverColor = isWhiteBackground || isEmptyBackground ? '#fff' : '#114455';
+  // const svgFillColor = isWhiteBackground  ? '#114455' : '#fff';
+  const svgFillColor = () => {
+    if(theme === 'light'){
+      return isWhiteBackground  ? '#114455' : '#fff';
+    }
+    else{
+      return isWhiteBackground  ? '#fff' : '#114455';
+    }
+  }
+  // const svgHoverColor = isWhiteBackground  ? '#fff' : '#114455';
+  const svgHoverColor = () => {
+    if(theme === 'light'){
+      return isWhiteBackground  ? '#fff' : '#114455';
+    }
+    else{
+      return isWhiteBackground  ? '#114455' : '#fff';
+    }
+  }
 
   const handleHover = () => {
     setIsHovered(!isHovered);
@@ -47,7 +67,7 @@ export const PrimaryButton = ({ text, background, width }) => {
         <desc>Created with Sketch.</desc>
         <g id="icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
           <g id="ui-gambling-website-lined-icnos-casinoshunter" transform="translate(-212.000000, -159.000000)" 
-          fill={isHovered ? svgHoverColor : svgFillColor}
+          fill={isHovered ? svgHoverColor() : svgFillColor()}
           style={{ transition: 'fill 0.5s ease-in-out' }}
           fillRule="nonzero">
             <g id="square-filled" transform="translate(50.000000, 120.000000)">

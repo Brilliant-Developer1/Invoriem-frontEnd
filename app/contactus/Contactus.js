@@ -3,7 +3,7 @@ import React from 'react';
 export const Contactus = () => {
   return (
     <div className="mt-8 md:mt-20 flex flex-col md:flex-row p-5 justify-between">
-      <div className='text-5xl md:text-7xl  font-extrabold leading-snug md:leading-snug'>
+      <div className='text-5xl md:text-7xl text-teal font-extrabold leading-snug md:leading-snug'>
         <p>Hello</p>
         <p>Bonjour</p>
         <p>Olá</p>
