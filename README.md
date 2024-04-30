@@ -18,6 +18,7 @@ Git Hub - https://github.com/Brilliant-Developer1/Invoriem-frontEnd
 - React
 - Tailwind CSS
 - DaisyUI
+- Light / Dark mode
 - React Countup
 - React Scroll Trigger
 - React Slick
@@ -36,6 +37,8 @@ This is a fully `RESPONSIVE` website for all 3 devices:
 - Mobile
 - Tablate
 - Computer / Laptop
+
+User can use this website in Light / Dark mode.
 
 Here is a demonstration for all individual pages.
 Navigation and footer are common for all pages.

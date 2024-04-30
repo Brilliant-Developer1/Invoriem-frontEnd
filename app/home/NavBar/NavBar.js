@@ -3,6 +3,7 @@ import { PrimaryButton } from '@/app/components/PrimaryButton.js';
 import Link from 'next/link';
 import { useContext, useState } from 'react';
 import logo from '@/public/images/logo.png';
+import logo2 from '@/public/images/logo2.png';
 import Image from 'next/image';
 import { ThemeContext } from '@/context/ThemeContext';
 
@@ -14,17 +15,25 @@ export const NavBar = () => {
   
 
   return (
-    <nav className={`w-full sticky top-0 z-50 ${theme === 'light' ? 'bg-white' : 'bg-teal-700'}`}>
+    <nav className={`w-full sticky top-0 z-50 ${theme === 'light' ? 'bg-white' : 'bg-teal-700 '}`}>
       <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           {/* LOGO */}
           <Link href="/">
+            {theme === 'light' ?
             <Image
+            width={150}
+            src={logo}
+            alt="logo"
+            onClick={() => setNavbar(false)}
+          /> :
+          <Image
               width={150}
-              src={logo}
+              src={logo2}
               alt="logo"
               onClick={() => setNavbar(false)}
             />
+          }
           </Link>
           {/* HAMBURGER BUTTON FOR MOBILE */}
           <div className="md:hidden">
@@ -109,7 +118,7 @@ export const NavBar = () => {
         <div>
           <div
             className={`flex-1 justify-self-center md:block  ${
-              navbar ? 'p-12 md:p-0 block bg-slate-50 md:bg-white  ' : 'hidden '
+              navbar ? 'p-12 md:p-0 block   ' : 'hidden '
             }`}
           >
             <div className="h-auto items-center justify-center md:flex ">
